@@ -465,6 +465,24 @@ line-height: normal;
   object-fit: contain;
 }
 
+/* single content box page */
+
+.single {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  padding: 60px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 5vh;
+  margin-bottom: 100vh;
+  border: 1px solid var(--standardblack);
+  border-radius: 20px 20px 20px 20px;
+  background: var(--boxbackground);
+  box-shadow: 6px 6px 0px 0px var(--lightyellow);
+}
+
+
 /* Media Query: Large Smartphones (Vertical) */
 @media screen and (max-width: 1090px) {
   .header {
@@ -657,6 +675,21 @@ line-height: normal;
   .secondary-chip {
     font-size: 10px;
   }
+
+  /* Single Content Box */
+
+  .single {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  padding: 30px;
+  margin-top: 10vh;
+  margin-bottom: 100vh;
+  border: 1px solid var(--standardblack);
+  border-radius: 20px 20px 20px 20px;
+  background: var(--boxbackground);
+  box-shadow: 6px 6px 0px 0px var(--lightyellow);
+}
 
 }
 
