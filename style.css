@@ -82,6 +82,17 @@ figcaption {
   align-self: stretch;
 }
 
+.linksize {
+  font-family: "Source Code Pro";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  gap: 0;
+  margin-bottom: 0;
+}
+
+
 /* Top Section */
 
 .headline-text-box {
