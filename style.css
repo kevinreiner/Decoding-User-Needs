@@ -447,7 +447,7 @@ line-height: normal;
 
 /* Image */
 
-.image-box {
+/*.image-box {
   display: inline-flex;
   align-self: start;
   align-items: center;
@@ -459,11 +459,26 @@ line-height: normal;
   padding: 20px;
   margin: 0 0 15px 0;
 }
+  */
+
+.image-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  border: 2px solid var(--standardblack);
+  box-shadow: 0px 4px 0px 0px var(--standardblack);
+  background: var(--white);
+  padding: 20px;
+  margin: 40px auto;
+}
 
 .image-box img {
   max-width: 40vw;
   object-fit: contain;
+  align-content: center;
 }
+
 
 /* single content box page */
 

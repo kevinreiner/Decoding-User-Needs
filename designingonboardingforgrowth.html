@@ -82,13 +82,13 @@
       <div class="between">
         <div class="box-content">
           <h1>Process</h1>
-          <h2></h2>
+          <h2>Optimizing Onboarding for Product-Led Growth</h2>
         </div>
 
         <div class="spacer"></div>
         
         <h2>01 Discover</h2>
-        <p>The initial phase involved an extensive content audit to identify all existing topics within the Knowledge Center. To benchmark industry standards, we analyzed competitors' knowledge centers and identified three potential structuring frameworks: (1) Topic-based (organized by key subjects), (2) Role-based (tailored to different user groups), (3) Task-based (focused on specific actions users perform). Additionally, we conducted user research to understand target audiences, their needs, and motivations for using the Knowledge Center. These insights provided a foundation for the subsequent restructuring efforts.</p>
+        <p>The process began with a full documentation and evaluation of the existing onboarding experience. Every step was mapped across the different user flows – one for enterprise and self-serve customers, and another for users coming through Usercentrics who had added fraud0 as an integration. This revealed a high level of complexity, driven by multiple overlapping flows. Reducing the number of variants became a clear priority – not only to improve the user experience but also to make the onboarding system easier to maintain. With this structural overview in place, a detailed funnel was built in PostHog to track actual user behavior across each step. The data confirmed critical drop-offs: 90% of users exited after clicking the initial conversion hook, and onboarding completion rates fell from 73% to just 25%. These findings highlighted the need to shorten the overall flow, provide clearer guidance throughout, and actively support users in completing the onboarding journey.</p>
 
         <figure>
           <div class="image-box">
@@ -98,79 +98,70 @@
         </figure>
 
         <h2>02 Define</h2>
-        <p>After synthesizing our research findings, we identified the primary usability issues and determined the best structural approach. The decision was made to adopt a topic-based framework, aligning with users' expectations and ensuring a more intuitive and user-friendly experience. This approach enabled better discoverability of key resources and streamlined navigation.</p>
+        <p>The goal of this phase was to create a unified and more focused onboarding experience. Previously, users were routed through two separate flows – one for enterprise/self-serve customers and another for those coming through Usercentrics. These paths were merged into a single, streamlined journey to reduce complexity and maintenance overhead. Rather than focusing on reducing the number of screens, the emphasis was on simplifying the experience: grouping related actions, clarifying the sequence, and ensuring each step added clear value. To support users beyond the product UI, email reminders were introduced as part of the flow – designed to nudge users who dropped off and help them re-enter the process smoothly. This defined flow set the stage for a more consistent, engaging, and guidance-driven onboarding aligned with product-led growth goals.</p>
 
         <figure>
           <div class="image-box">
-            <div class="chip-container">
-              <text class="primary-chip"> <i class="fa-solid fa-circle-xmark"></i> Information Overload</text>
-              <text class="primary-chip"> <i class="fa-solid fa-circle-xmark"></i> Lack of Contextual Guidance</text>
-              <text class="primary-chip"> <i class="fa-solid fa-circle-xmark"></i> Inconsistent Content Depth</text>
-              <text class="primary-chip"> <i class="fa-solid fa-circle-xmark"></i> Findability Issues</text>
-            </div>
+            <img src="svg/onboarding.svg" alt="Planning the updated Onboarding">
           </div>
-          <figcaption>Image 2: Usability Issues (Overview)</figcaption>
+          <figcaption>Image 2: Planning the new Onboarding Journey </figcaption>
         </figure>
 
         <h2>03 Develop</h2>
-        <p>To build a robust information architecture, we conducted a card sorting experiment, allowing us to gain insights into how users naturally categorize information. The results guided the creation of a new sitemap, designed with the following principles: Flexibility: The structure accommodates future topics and content expansion. Consistency: Uniform categorization enhances user comprehension. User-centricity: Navigation aligns with users' mental models, improving accessibility.</p>
+        <p>Based on the defined flow, a clickable high-fidelity prototype was built to visualize and test the new onboarding experience. It combines the previously separate self-serve and Usercentrics flows into one unified journey. The prototype includes a sign-up form, email verification screen, a short survey to personalize setup, and a final implementation step with integration instructions. To support users beyond the product UI, reminder emails were integrated into the flow to encourage completion. The visual structure guides users step-by-step, keeping the process clear and consistent across screens.</p>
 
         <figure>
           <div class="image-box">
-            <img src="svg/Sitemap.svg" alt="Sitemap">
+              <img src="svg/Onboarding01.png" alt="Onboarding01">
           </div>
-          <figcaption>Image 3: Sitemap</figcaption>
+
+          <div class="image-box">
+              <img src="svg/Onboarding02.png" alt="Onboarding02">
+          </div>
+          
+          <div class="image-box">
+              <img src="svg/Onboarding03.png" alt="Onboarding03">
+          </div>
+
+          <figcaption>Image 3: High-fidelity Prototype of the Onboarding Experience</figcaption>
         </figure>
 
         <h2>04 Deliver</h2>
-        <p>In the final phase, all content pages were developed and organized within a dedicated space in Confluence, following the new sitemap. Company-wide feedback was collected and incorporated, ensuring that the structure met both user needs and business goals. The redesigned Knowledge Center was then successfully deployed via Scroll Viewport, providing a seamless and efficient user experience.</p>
-
-        <figure>
-          <div class="image-box">
-            <div class="chip-container">
-              <text class="primary-chip"> <i class="fa-solid fa-circle-check"></i> Thematic Chunking for FAQs</text>
-              <text class="primary-chip"> <i class="fa-solid fa-circle-check"></i> Adding On-Brand Headers for Consistency and Guidance, with Brief Intros to Orient Readers on Each Page</text>
-              <text class="primary-chip"> <i class="fa-solid fa-circle-check"></i> Improved Information Architecture by Implementing Findable Categories</text>
-              <text class="primary-chip"> <i class="fa-solid fa-circle-check"></i> Simple & Reduced Structure</text>
-              <text class="primary-chip"> <i class="fa-solid fa-circle-check"></i> Introducing fraud0 Academy to Provide Knowledge and Empower Customers</text>
-            </div>
-          </div>
-          <figcaption>Image 4: Main Improvements (Overview)</figcaption>
-        </figure>
+        <p>The next step will be to bring the new onboarding flow into production. This includes handing over final design specifications, supporting the development team during implementation, and setting up event tracking to match the restructured journey. Reminder emails will be configured to trigger at key drop-off points, and the updated funnel will allow for continuous monitoring. Once live, the new flow will be evaluated to measure its impact and identify opportunities for further iteration.</p>
 
       </div>
 
       <div class="between">
         <div class="box-content">
           <h1>Impact<h1>
-          <h2>A More Usable and Scalable Knowledge Hub</h2>
+          <h2>Enabling customers to find value – without friction, and without needing a human in the loop.</h2>
         </div>
 
         <div class="spacer"></div>
 
-        <p>The redesign made it easier for users to find information, reducing support queries and improving engagement with key resources. Navigation became more intuitive, and the topic-based structure helped users get answers faster without relying on a bloated FAQ. Internal teams could update content more efficiently, keeping the Knowledge Center scalable and organized. Overall, it shifted from a cluttered, hard-to-navigate repository to a practical, user-friendly resource that better supports advertisers in tackling ad fraud.</p>
+        <p>By streamlining the onboarding experience, the project laid an essential foundation for product-led growth at fraud0. Simplifying the journey, merging flows, and introducing reminder touchpoints made it easier for users to reach meaningful product interaction on their own – without requiring manual guidance through a customer success or sales intervention. This shift not only improves the user experience but also enables the product to play a more active role in driving conversion and engagement.</p>
       </div>
 
       <div class="bottom">
         <div class="box-content">
           <h1>Learnings<h1>
-          <h2>The redesign turned the Knowledge Center into a strategic asset, reducing friction, increasing engagement, and reinforcing fraud0’s leadership in ad fraud prevention.</h2>
+          <h2></h2>
         </div>
 
         <div class="spacer"></div>
 
-        <h2>#1 A Topic-Based Structure Wasn’t the Obvious Choice—User Research Made It Clear</h2>
+        <h2>#1 Simplification is hard – but worth it.</h2>
 
-        <p>At first, a role-based or task-based structure seemed logical, especially since advertisers have different levels of expertise. However, our user research showed that users weren’t thinking in terms of roles—they were searching for answers based on problems. This insight led to the topic-based structure, which provided more intuitive navigation.</p>
+        <p>Merging multiple onboarding paths into one exposed just how much complexity had crept in. Stripping things back to what’s essential takes effort, but it's what creates clarity for users and ease for teams.</p>
         <br>
 
-        <h2>#2 The FAQ Wasn’t Just Overloaded—It Was a Symptom of Poor Information Flows</h2>
-        <p>One surprising takeaway was that the bloated FAQ section wasn’t just due to too many questions—it was because users had nowhere else to find contextual explanations. This led us to deconstruct the FAQ and integrate answers into relevant topic pages, drastically reducing the reliance on a catch-all section.</p>
+        <h2>#2 UX and growth are deeply connected</h2>
+        <p>Onboarding isn’t just a functional step – it directly shapes how users perceive value and whether they stick around. Improving it isn’t just design polish; it’s a growth lever.</p>
 
         <br>
 
-        <h2>#3 Implementing the New Structure Required More Than Just Content Migration</h2>
-        <p>Translating the new architecture into Confluence and Scroll Viewport wasn’t a simple content transfer. The new structure required reworking metadata, search functionality, and cross-linking between pages to truly reflect the improved user journey. Without these technical refinements, the redesign would have been just a surface-level fix.</p>
+        <h2>#3 Edge cases multiply fast.</h2>
+        <p>Especially with different user types (enterprise, self-serve, integration users), logic and expectations diverge quickly. Mapping and unifying flows early helps avoid mess later.</p>
         <div class="spacer"></div>
 
 
